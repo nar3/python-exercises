@@ -1,4 +1,5 @@
 from math import *
+from array import *
 def fac_equ(w):
     q=w
     digit=0
@@ -11,6 +12,7 @@ def fac_equ(w):
         digit+=1
     w=list(str(w))
     w=list(map(int,w))
+    w=array('i',w)
     if sum((map(factorial,w)))==q:
         print(sum((map(factorial,w))),q)
 for i in range(100,1000):
